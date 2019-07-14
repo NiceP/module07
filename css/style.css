@@ -1,0 +1,329 @@
+
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Fonts */
+
+@font-face {
+
+  font-family: 'Damion';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Damion'), url('../fonts/damion-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/damion-v7-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/montserrat-v12-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Droid Serif Italic - latin */
+
+@font-face {
+  font-family: 'DroidSerif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('DroidSerif Italic'), local('DroidSerif-Italic'), url('../fonts/DroidSerif-Italic.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 948px;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+
+
+
+
+/* Menu */
+
+
+.page-nav {
+  padding: 42px 0px 112px; 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 486px;
+  list-style: none;
+  line-height: 14px;
+  
+}
+
+.menu-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #222222;
+}
+
+.menu-item:hover .menu-link {
+  color: #fed136;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: 'Damion', cursive;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 14px;
+  letter-spacing: 1.3px;
+  color: #fed136;
+}
+/* Service */
+
+.service {
+  
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 114px;
+}
+
+.service p {
+  color: #777777;
+  font-family: 'DroidSerif';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0px;
+  margin-bottom: 78px;
+}
+
+.service h2 {
+  color: #222222;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.service-block {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  
+}
+
+.block-item h4 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px 0px 11px;
+  letter-spacing: -0.45px;
+}
+
+.block-item p {
+  margin: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+}
+
+.block-item {
+  width: 29.7%;
+}
+
+.item-icon {
+  margin: 0 auto;
+  margin-bottom: 22px;
+  width: 67px;
+  height: 67px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  background: no-repeat center;
+}
+
+.icon-basket {
+  background-image: url(../img/icons/icon-basket.png);
+}
+
+.icon-comp {
+  background-image: url(../img/icons/icon-laptop.png);
+}
+
+.icon-lock {
+  background-image: url(../img/icons/icon-locked.png);
+}
+
+/* Styles For Contacts  */
+
+.contact {
+  padding: 105px 0px 114px;
+  background: #222222 url(../img/Map_Image.png);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: right;
+  
+}
+
+.contact h2 {
+  color: #ffffff;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.contact p {
+  color: #777777;
+  font-family: "DroidSerif";
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 73px;
+}
+
+/* Styles For Form Block */
+
+.contact-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  
+}
+
+.input::placeholder,
+.textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+.input-block {
+  width: 455px;
+}
+
+.input {
+  
+  border: none;
+  border-radius: 3px;
+  width: 455px;
+  height: 50px;
+  padding: 0;
+  padding-left: 13px;
+  outline: none;
+}
+
+.input:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.textarea {
+  
+  width: 456px;
+  height: 210px;
+  border: 1px solid #cccccc;
+  border-radius: 3px/5%;
+  background-color: #ffffff;
+  padding: 12px 19px;
+  outline: none;
+  resize: none;
+}
+
+
+.input:required:invalid, .textarea:required:invalid{
+  border: 3px solid rgba(255, 0, 0, 0);
+}
+
+.input:required:focus, .textarea:required:focus {
+  border: 3px solid rgba(255, 0, 0, 1);
+  border-radius: 3px;
+}
+
+.input:required:valid, .textarea:required:valid {
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 255, 0, 1);
+  border-radius: 3px;
+}
+.textarea:required:valid, .textarea:required:focus {
+  border-radius: 3px/5%;
+}
+
+.submit {
+  width: 240px;
+  height: 66px;
+  background-color: #fed136;
+  padding: 23px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* visually-hidden */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100:);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
